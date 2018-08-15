@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const labelStyle = {
   marginLeft: "10px",
@@ -23,6 +24,13 @@ const Input = ({ input, value, action, name }) => {
       </label>
     </div>
   )
+}
+
+Input.PropTypes = {
+  input: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  action: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired
 }
 
 export default Input;

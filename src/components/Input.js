@@ -26,7 +26,7 @@ const Input = ({ input, value, action, name }) => {
   )
 }
 
-Input.PropTypes = {
+Input.propTypes = {
   input: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   action: PropTypes.func.isRequired,

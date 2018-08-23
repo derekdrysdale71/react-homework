@@ -11,11 +11,11 @@ class App extends Component {
   state = {
     value1: '',
     value2: ''
-  }
+  };
 
   handleChange = event => {
     this.setState({ [event.target.name]: event.target.value });
-  }
+  };
 
   render() {
     return (
@@ -27,8 +27,15 @@ class App extends Component {
             <Route exact path="/option1" component={AboutView} />
             <InputProvider>
               <Route
-                exact path="/option2"
-                render={(props) => <UserView {...props} {...this.state} action={this.handleChange} />}
+                exact
+                path="/option2"
+                render={props => (
+                  <UserView
+                    {...props}
+                    {...this.state}
+                    action={this.handleChange}
+                  />
+                )}
               />
             </InputProvider>
           </Switch>

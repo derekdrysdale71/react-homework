@@ -14,7 +14,7 @@ const DropDownMenu = () => {
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
 export default DropDownMenu;

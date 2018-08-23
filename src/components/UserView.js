@@ -1,32 +1,33 @@
 import React from 'react';
-import { InputContext } from './InputProvider'
+import { InputContext } from './InputProvider';
 import Input from './Input';
 
 const UserView = props => {
+  console.log(props);
   return (
     <div>
       <InputContext.Consumer>
         {context => (
           <Input
-            input={context.input1}
+            label={context.input1}
             value={props.value1}
             action={props.action}
-            name='value1'
+            name="value1"
           />
         )}
       </InputContext.Consumer>
       <InputContext.Consumer>
         {context => (
           <Input
-            input={context.input2}
+            label={context.input2}
             value={props.value2}
             action={props.action}
-            name='value2'
+            name="value2"
           />
         )}
       </InputContext.Consumer>
     </div>
-  )
-}
+  );
+};
 
 export default UserView;

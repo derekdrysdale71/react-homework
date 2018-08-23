@@ -4,7 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 const navStyle = {
   backgroundColor: 'papayawhip'
-}
+};
 
 //Using a react-bootstrap Navbar and dropdown menu as the instructions said I could use any npm module I wanted
 const NavBar = () => {
@@ -21,7 +21,7 @@ const NavBar = () => {
         </NavDropdown>
       </Nav>
     </Navbar>
-  )
-}
+  );
+};
 
 export default NavBar;

@@ -3,7 +3,6 @@ import { InputContext } from './InputProvider';
 import Input from './Input';
 
 const UserView = props => {
-  console.log(props);
   return (
     <div>
       <InputContext.Consumer>
